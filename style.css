@@ -178,6 +178,7 @@ button{
 	font-size: 1em;
     font-family: 'karlaregular';
 	margin: 20px 0px 20px 0px;
+	border: none;
 }
 
 button:hover{
