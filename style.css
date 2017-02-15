@@ -1,0 +1,292 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('fonts/pacifico-webfont.eot');
+    src: url('fonts/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pacifico-webfont.woff') format('woff'),
+         url('fonts/pacifico-webfont.ttf') format('truetype'),
+         url('fonts/pacifico-webfont.svg#pacificoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'karlabold';
+    src: url('fonts/karla-bold-webfont.eot');
+    src: url('fonts/karla-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/karla-bold-webfont.woff') format('woff'),
+         url('fonts/karla-bold-webfont.ttf') format('truetype'),
+         url('fonts/karla-bold-webfont.svg#karlabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'karlaregular';
+    src: url('fonts/karla-regular-webfont.eot');
+    src: url('fonts/karla-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/karla-regular-webfont.woff') format('woff'),
+         url('fonts/karla-regular-webfont.ttf') format('truetype'),
+         url('fonts/karla-regular-webfont.svg#karlaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+	width: 100%;
+	max-width: 1400px;
+}
+
+
+nav {
+	background-color: #000000;
+	width: 100%;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.nav-logo{
+	text-align:left;	
+	width: 50%;
+}
+
+.nav-logo .logo {
+	width: 30%;
+	min-width: 150px;
+	padding: 0px 0px 0px 0px;
+}
+
+.navigation-bar{
+	width: 50%;
+}
+
+.navigation-bar ul{
+	list-style-type: none;
+	padding-left: 0;
+	display: flex;
+	flex-direction: row;
+	margin-right: 10px;
+	justify-content: flex-end;
+}
+
+.navigation-bar li{
+	font-family: 'karlabold';
+  	margin: 5px 10px;
+	color: white;
+	font-size: 100%;
+}
+
+.clear{
+	clear:both;
+}
+
+.hero-image {
+	  background:  
+    linear-gradient(45deg,
+      rgba(0, 0, 0, 0.1), 
+      rgba(0, 0, 0, 0.55)
+	),
+
+    url(images/kayak-bkgd.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+	color: white;
+	font-size: 1em;
+	font-family: 'pacificoregular';
+	display: flex;
+	justify-content: center;
+	flex-direction:column;
+	align-items: center;
+}
+.hero-image p{
+	color: white;
+	padding: 10px 0px 10px 0px;
+}
+.hero-image h2{
+	color: white;
+	padding: 10px 0px 10px 0px;
+}
+.hero-emphasize-text{
+	background-color: #3F3F3F;
+	opacity: .75;
+	padding: 10px 0px 10px 0px;
+}
+
+button{
+	height: 50px;
+	width: 120px;
+	border-radius: 50px;
+	color: white;
+	background-color: #e2574c;
+	font-size: 1em;
+    font-family: 'karlaregular';
+	padding: 10px 0px 10px 0px;
+}
+
+button:hover{
+	background-color:#b64036
+}
+
+about{
+	height: 200px;
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+}
+.about-copy{
+	padding: 5px;
+}
+.about-images{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content:space-between;
+}
+
+.about-images img{
+	width: 32%;
+	height: 100%;
+
+}
+
+.rentals-copy{
+	display: flex;
+	
+}
+.rentals-copy article{
+	width: 50%;
+}
+
+.rentals-copy aside{
+	width: 50%;
+}
+
+.website-footer{
+	background-color:#383238;
+	height:150px;
+	color: white;
+	position: relative;
+	bottom: 0;
+	right: 0;
+	
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+}
+.social-media{
+	text-align:right;
+	list-style-type: none;
+	padding: 5%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.contact-info{
+	text-align:left;
+	list-style-type: none;
+	padding: 5%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+
+footer li{
+	list-style-type: none;
+	font-family: 'karlaregular';
+}
+
+h1{
+	color: white;
+	font-family: 'pacificoregular';
+	font-size: 5em;
+	text-align: center;
+}
+
+h2{
+	color: #646464;
+	font-family: 'pacificoregular';
+	font-size: 3em;
+	text-align: center;
+	padding: 5px;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'karlaregular';
+    color: #2d2d2d;
+	padding: 10px;
+}
+
+a {
+color: #e2574c;
+margin: 60px 20px 0 20px;
+}
+a:hover{
+	color: #b64036;
+	margin: 60px 20px 0 20px;
+}
+
+iframe{
+	width: 100%; 
+}
+
+.location{
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	width: 100%;
+}
