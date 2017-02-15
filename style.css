@@ -192,7 +192,7 @@ about{
 }
 
 .about-copy{
-	padding: 10px 200px 10px 200px;
+	padding: 0% 15%;
 	align-content: center;
 }
 .about-images{
@@ -200,6 +200,7 @@ about{
 	flex-direction: row;
 	align-content: center;
 	justify-content:space-between;
+	padding: 0% 2%;
 }
 
 .about-images img{
@@ -210,6 +211,7 @@ about{
 
 .rentals-copy{
 	display: flex;
+	padding: 0% 2%;
 	
 }
 .rentals-copy article{
