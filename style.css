@@ -269,7 +269,9 @@ td{
 	display: flex;
 	justify-content: flex-end;
 }
-
+.social-media ul{
+	width: 100%;
+}
 .contact-info{
 	text-align:left;
 	list-style-type: none;
