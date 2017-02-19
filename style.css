@@ -250,11 +250,10 @@ td{
 
 .website-footer{
 	background-color:#383238;
-	height:150px;
+	height:100%;
 	color: white;
-	position: relative;
-	bottom: 0;
-	right: 0;
+	padding:2% 0% 2% 0%;
+	line-height: 140%;
 	
 	display:flex;
 	justify-content:space-between;
@@ -279,6 +278,9 @@ td{
 	justify-content: flex-start;
 }
 
+.brand-color-grey{
+	color:#646464;
+}
 
 footer li{
 	list-style-type: none;
