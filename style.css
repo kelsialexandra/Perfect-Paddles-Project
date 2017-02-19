@@ -185,11 +185,10 @@ button:hover{
 .about-copy{
 	padding: 0% 10%;
 	align-content: center;
-}
-
-.about-copy p{
 	text-align: center;
 }
+
+
 .about-images{
 	display: flex;
 	flex-direction: row;
