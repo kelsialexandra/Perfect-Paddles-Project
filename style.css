@@ -223,7 +223,7 @@ table, th, td{
 	font-family: 'karlaregular';
   	font-size: 1em;
 	border: 1px solid #c8c8c8;
-  	padding:2%;
+  	padding:3%;
 }
 
 .table-header{
@@ -231,7 +231,7 @@ table, th, td{
 }
 .duration-column{
 	text-align: left;
-	padding: 2%;
+	padding: 2% 2%;
 }
 td{
 	text-align: center;
