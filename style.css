@@ -218,6 +218,23 @@ about{
 .rentals-copy article{
 	width: 50%;
 }
+table, th, td{
+	font-family: 'karlaregular';
+  	font-size: 1em;
+	border: 1px solid #c8c8c8;
+  	padding:2%;
+}
+
+.table-header{
+	background-color: #e6e6e6;
+}
+.duration-column{
+	text-align: left;
+	padding: 2%;
+}
+td{
+	text-align: center;
+}
 
 .rentals-copy aside{
 	width: 50%;
@@ -245,7 +262,7 @@ about{
 .social-media{
 	text-align:left;
 	list-style-type: none;
-	padding: 5%;
+	padding: 0% 5% 0% 5%;
 	display: flex;
 	justify-content: flex-end;
 }
@@ -253,7 +270,7 @@ about{
 .contact-info{
 	text-align:left;
 	list-style-type: none;
-	padding: 5%;
+	padding: 0% 5% 0% 5%;
 	display: flex;
 	justify-content: flex-start;
 }
