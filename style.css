@@ -157,6 +157,7 @@ nav {
 	color: white;
 	padding: 10px 0px 10px 0px;
 	margin: 20px 0px 20px 0px;
+	line-height: 0.5;
 }
 .hero-image h2{
 	color: white;
@@ -164,8 +165,8 @@ nav {
 	margin: 20px 0px 20px 0px;
 }
 .hero-emphasize-text{
-	background-color: #3F3F3F;
-	opacity: .75;
+	background: rgba(0, 0, 0, 0.4);
+	color: white;
 	padding: 10px 0px 10px 0px;
 	margin: 20px 0px 20px 0px;
 }
@@ -194,7 +195,7 @@ about{
 }
 
 .about-copy{
-	padding: 0% 15%;
+	padding: 0% 10%;
 	align-content: center;
 }
 .about-images{
