@@ -202,8 +202,9 @@ button:hover{
 .about-images img{
 	width: 98%;
 	min-width: 200px;
+	padding:2%;
 	height: 100%;
-	box-shadow: 0px 0px 10px #545454;
+	box-shadow: 1px 1px 10px #545454;
 
 }
 
