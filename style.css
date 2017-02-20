@@ -410,15 +410,56 @@ a:hover{
 }
 .rentals-copy{
 	display: flex;
+	flex-wrap: nowrap;
 	padding: 0% 2%;
 	
 }
 .rentals-copy article{
 	width: 50%;
+	padding: 0%;
 }
 
 .rentals-copy aside{
 	width: 50%;
+	padding: 0%;
+}
+
+.website-footer{
+	padding:2% 0% 2% 0%;
+	line-height: 140%;
+	
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+}
+
+.website-footer a{
+	color:#ffffff;
+}
+
+.social-media{
+	text-align:left;
+	list-style-type: none;
+	padding: 0% 5% 0% 5%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.social-media ul{
+	width: 100%;
+}
+.contact-info{
+	text-align:left;
+	width: 50%;
+	list-style-type: none;
+	padding: 0% 5% 0% 5%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+footer li{
+	list-style-type: none;
+	font-family: 'karlaregular';
 }
 
 
