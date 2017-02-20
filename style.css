@@ -85,6 +85,7 @@ table {
 
 html{
 	width: 100%;
+	min-width: 250px;
 }
 
 nav {
@@ -93,22 +94,23 @@ nav {
 	padding: 0.5% 0%;
 	list-style-type: none;
 	display: flex;
-
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .nav-logo{
-	text-align:left;	
-	width: 50%;
+	text-align:center;	
+	width: 100%;
 }
 
 .nav-logo .logo {
-	width: 30%;
+	width: 50%;
 	min-width: 150px;
 	margin: 1%;
 }
 
 .navigation-bar{
-	width: 50%;
+	width: 100%;
 }
 
 .navigation-bar ul{
@@ -117,7 +119,7 @@ nav {
 	display: flex;
 	flex-direction: row;
 	margin-right: 10px;
-	justify-content: flex-end;
+	justify-content: center;
 }
 
 .navigation-bar li{
@@ -149,9 +151,10 @@ nav {
 }
 .hero-image p{
 	color: #ffffff;
-	padding: 10px 0px 10px 0px;
-	margin: 20px 0px 20px 0px;
-	line-height: 0.5;
+	padding: 0%;
+	margin: 0%;
+	text-align: center;
+	width: 80%;
 }
 .hero-image h2{
 	color: #ffffff;
@@ -207,12 +210,19 @@ button:hover{
 .rentals-copy{
 	display: flex;
 	padding: 0% 2%;
+	flex-wrap: wrap;
 	
 }
 .rentals-copy article{
-	width: 50%;
-	padding: 0 10% 0 5%;
+	width: 100%;
+	padding: 0 10% 0 10%;
 }
+
+.rentals-copy aside{
+	width: 100%;
+	padding: 10% 10% 0 10%;
+}
+
 table, th, td{
 	font-family: 'karlaregular';
   	font-size: 1em;
@@ -231,9 +241,6 @@ td{
 	text-align: center;
 }
 
-.rentals-copy aside{
-	width: 50%;
-}
 .location-map{
 	width: 94%;
 	padding: 0px 0px 10px 0px;
@@ -247,8 +254,8 @@ td{
 	line-height: 140%;
 	
 	display:flex;
-	justify-content:space-between;
-	align-items: center;
+	flex-wrap:wrap;
+	justify-content:center;
 }
 .website-footer a{
 	color:#ffffff;
@@ -264,11 +271,9 @@ td{
 	width: 100%;
 }
 .contact-info{
-	text-align:left;
+	text-align:center;
 	list-style-type: none;
 	padding: 0% 5% 0% 5%;
-	display: flex;
-	justify-content: flex-start;
 }
 
 .brand-color-grey{
@@ -323,3 +328,33 @@ iframe{
 	align-items: center;
 	width: 100%;
 }
+
+@media all and (min-width: 600px) {
+	html{
+		width: 100%;
+		min-width: 600px;
+	}
+	
+	nav {
+		display: flex;
+		flex-flow: row wrap;
+  		justify-content: flex-end;
+
+	}
+	.nav-logo{
+		text-align:left;	
+		width: 50%;
+	}
+
+	.navigation-bar{
+		width: 50%;
+	}
+	.navigation-bar ul{
+	display: flex;
+	flex-direction: row;
+	margin-right: 10px;
+	justify-content: flex-end;
+}
+
+   
+}*/
