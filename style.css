@@ -281,9 +281,9 @@ iframe{
 /*.social-media ul{
 	width: 100%;
 }*/
-.social-media a, a:hover{
+/*.social-media a, a:hover{
 	display: none;
-}
+}*/
 .contact-info{
 	text-align:center;
 	list-style-type: none;
@@ -295,8 +295,6 @@ iframe{
 	color:#646464;
 }
 .social-media ul{
-	display:inherit;
-	letter-spacing: 15px;
 	padding:10% 0 40% 0;
 }
 
