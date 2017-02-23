@@ -85,48 +85,47 @@ table {
 
 html{
 	width: 100%;
-	max-width: 1400px;
+	min-width: 250px;
 }
-
 
 nav {
 	background-color: #000000;
 	width: 100%;
-	height: 50px;
+	padding: 0.5% 0%;
 	list-style-type: none;
 	display: flex;
-	flex-direction: row;
-	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .nav-logo{
-	text-align:left;	
-	width: 50%;
+	text-align:center;	
+	width: 100%;
 }
 
 .nav-logo .logo {
-	width: 30%;
+	width: 50%;
 	min-width: 150px;
-	padding: 0px 0px 0px 0px;
+	margin: 1%;
 }
 
 .navigation-bar{
-	width: 50%;
+	width: 100%;
 }
 
 .navigation-bar ul{
 	list-style-type: none;
-	padding-left: 0;
+	padding: 1% 0%;
 	display: flex;
 	flex-direction: row;
 	margin-right: 10px;
-	justify-content: flex-end;
+	justify-content: center;
 }
 
 .navigation-bar li{
 	font-family: 'karlabold';
   	margin: 5px 10px;
-	color: white;
+	color: #ffffff;
 	font-size: 100%;
 }
 
@@ -141,32 +140,30 @@ nav {
       rgba(0, 0, 0, 0.55)
 	),
 
-    url(images/kayak-bkgd.jpg);
+    url(images/kayak-bkgd.jpg) no-repeat center;
 	background-size: cover;
 	width: 100%;
 	height: 500px;
-	color: white;
-	font-size: 1em;
-	font-family: 'pacificoregular';
 	display: flex;
 	justify-content: center;
 	flex-direction:column;
 	align-items: center;
 }
 .hero-image p{
-	color: white;
-	padding: 10px 0px 10px 0px;
-	margin: 20px 0px 20px 0px;
-	line-height: 0.5;
+	color: #ffffff;
+	padding: 0%;
+	margin: 0%;
+	text-align: center;
+	width: 80%;
 }
 .hero-image h2{
-	color: white;
+	color: #ffffff;
 	padding: 10px 0px 10px 0px;
 	margin: 20px 0px 20px 0px;
 }
 .hero-emphasize-text{
 	background: rgba(0, 0, 0, 0.4);
-	color: white;
+	color: #ffffff;
 	padding: 10px 0px 10px 0px;
 	margin: 20px 0px 20px 0px;
 }
@@ -175,7 +172,7 @@ button{
 	height: 50px;
 	width: 120px;
 	border-radius: 50px;
-	color: white;
+	color: #ffffff;
 	background-color: #e2574c;
 	font-size: 1em;
     font-family: 'karlaregular';
@@ -187,41 +184,46 @@ button:hover{
 	background-color:#b64036
 }
 
-about{
-	height: 200px;
-	display: flex;
-	align-content: center;
-	flex-direction: column;
-}
 
 .about-copy{
 	padding: 0% 10%;
-	align-content: center;
+	text-align: center;
 }
+
+
 .about-images{
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
 	align-content: center;
 	justify-content:space-between;
 	padding: 5% 2%;
 }
 
 .about-images img{
-	width: 32%;
+	width: 98%;
+	min-width: 200px;
+	padding:2%;
 	height: 100%;
-	box-shadow: 0px 0px 10px #545454;
+	box-shadow: 1px 1px 10px #545454;
 
 }
 
 .rentals-copy{
 	display: flex;
 	padding: 0% 2%;
+	flex-wrap: wrap;
 	
 }
 .rentals-copy article{
-	width: 50%;
-	padding: 0 10% 0 5%;
+	width: 100%;
+	padding: 0 10% 0 10%;
 }
+
+.rentals-copy aside{
+	width: 100%;
+	padding: 10% 10% 0 10%;
+}
+
 table, th, td{
 	font-family: 'karlaregular';
   	font-size: 1em;
@@ -240,46 +242,62 @@ td{
 	text-align: center;
 }
 
-.rentals-copy aside{
-	width: 50%;
+.location{
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	width: 100%;
 }
+
 .location-map{
 	width: 94%;
 	padding: 0px 0px 10px 0px;
 }
 
+iframe{
+	width: 100%; 
+}
+
 .website-footer{
 	background-color:#383238;
 	height:100%;
-	color: white;
+	color: #ffffff;
 	padding:2% 0% 2% 0%;
 	line-height: 140%;
 	
 	display:flex;
-	justify-content:space-between;
-	align-items: center;
+	flex-wrap:wrap;
+	justify-content:center;
 }
 .website-footer a{
-	color:white;
+	color:#ffffff;
 }
 .social-media{
-	text-align:left;
-	list-style-type: none;
-	padding: 0% 5% 0% 5%;
 	display: flex;
-	justify-content: flex-end;
-}
+	flex-direction: row;
+	justify-content:center;
 
+}
+/*.social-media ul{
+	width: 100%;
+}*/
+.social-media a, a:hover{
+	display: none;
+}
 .contact-info{
-	text-align:left;
+	text-align:center;
 	list-style-type: none;
-	padding: 0% 5% 0% 5%;
-	display: flex;
-	justify-content: flex-start;
+	padding: 10% 5% 0% 5%;
+	width: 100%;
 }
 
 .brand-color-grey{
 	color:#646464;
+}
+.social-media ul{
+	display:inherit;
+	letter-spacing: 15px;
+	padding:10% 0 40% 0;
 }
 
 footer li{
@@ -288,7 +306,7 @@ footer li{
 }
 
 h1{
-	color: white;
+	color: #ffffff;
 	font-family: 'pacificoregular';
 	font-size: 5em;
 	text-align: center;
@@ -320,13 +338,137 @@ a:hover{
 	margin: 5px 5px 5px 5px;
 }
 
-iframe{
-	width: 100%; 
+
+
+@media all and (min-width: 600px) {
+	html{
+		width: 100%;
+		min-width: 600px;
+	}
+	
+	nav {
+		display: flex;
+		flex-flow: row wrap;
+  		justify-content: flex-end;
+
+	}
+	.nav-logo{
+		text-align:left;	
+		width: 50%;
+	}
+
+	.nav-logo .logo {
+	width: 30%;
+	min-width: 150px;
+	margin: 1% 0 1% 0;
 }
 
-.location{
+	.navigation-bar{
+		width: 50%;
+	}
+	.navigation-bar ul{
 	display: flex;
-	flex-direction:column;
+	flex-direction: row;
+	margin: 1% 0 1% 0;
+	justify-content: flex-end;
+}
+
+.navigation-bar li{
+	font-family: 'karlabold';
+  	margin: 5px 10px;
+	color: #ffffff;
+	font-size: 100%;
+}
+
+.clear{
+	clear:both;
+}
+
+.hero-image p{
+	color: #ffffff;
+	padding: 10px 0px 10px 0px;
+	margin: 20px 0px 20px 0px;
+	line-height: 0.5;
+	width:initial;
+}
+
+.hero-emphasize-text{
+	background: rgba(0, 0, 0, 0.4);
+	color: #ffffff;
+	padding: 10px 0px 10px 0px;
+	margin: 20px 0px 20px 0px;
+}
+
+.about-images{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content:space-between;
+	padding: 5% 2%;
+}
+
+.about-images img{
+	width: 32%;
+	min-width: 200px;
+	height: 100%;
+	padding: 0%;
+	box-shadow: 0px 0px 10px #545454;
+
+}
+.rentals-copy{
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 0% 2%;
+	
+}
+.rentals-copy article{
+	width: 50%;
+	padding: 0% 5%;
+}
+
+.rentals-copy aside{
+	width: 50%;
+	padding: 0% 5%;
+}
+
+.website-footer{
+	padding:2% 0% 2% 0%;
+	line-height: 140%;
+	
+	display:flex;
+	justify-content:space-between;
 	align-items: center;
+}
+
+.website-footer a{
+	color:#ffffff;
+}
+
+.social-media{
+	text-align:left;
+	list-style-type: none;
+	padding: 0% 5% 0% 5%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.social-media ul{
 	width: 100%;
+}
+.contact-info{
+	text-align:left;
+	width: 50%;
+	list-style-type: none;
+	padding: 0% 5% 0% 5%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+footer li{
+	list-style-type: none;
+	font-family: 'karlaregular';
+}
+
+
+   
 }
