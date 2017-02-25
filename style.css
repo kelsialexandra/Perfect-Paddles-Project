@@ -298,6 +298,10 @@ iframe{
 	padding:10% 0 40% 0;
 }
 
+span{
+	display:none;
+}
+
 footer li{
 	list-style-type: none;
 	font-family: 'karlaregular';
